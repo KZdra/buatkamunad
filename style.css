@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-repeat: no-repeat;
+    background: rgb(97,130,100);
+background: linear-gradient(97deg, rgba(97,130,100,1) 0%, rgba(121,172,120,1) 57%);
+}
+
+
+.hero-sec {
+    margin-left: 30px;
+    margin-top: 215px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+
+
+.title-cont h2 {
+    color: #D0E7D2;
+    font-size: 10rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .09em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .01em; /* Adjust as needed */
+  animation: 
+    typing 2.0s steps(40, end),
+    blink-caret .75s step-end infinite ;
+}
+
+
+.title-cont p {
+    font-size: 1.5rem;
+    padding-top: 2px;
+    color: #4d4c4c;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.card-cont {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    height: 500px;
+   
+}
+
+.card {
+    margin-top: 100px;
+    padding: 10px 10px;
+    height: 300px;
+    
+    background-color: white;
+}
+.card-article {
+    padding-top: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.mid-sec {
+    margin-top: 300px;
+    height: 100vh;
+}
+
+.mid-title h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #D0E7D2;
+    padding-top: 10px;
+}
+
+.pol-cont {
+    display: flex;
+    column-gap: 100px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.polaroid {
+    padding: 10px 10px;
+    background-color: white;
+    height: 300px;
+    box-shadow: 12px 12px 15px black;
+}
+
+.pol-txt h2 {
+    padding-top: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cssBasedZoom {
+  transition: transform 0.23s;
+  &:hover {
+    transform: scale(2);
+  }
+}
+
+.polaroid:hover{
+    animation:rotation 2s;
+}
+
+
+.rotation {
+    animation: rotation 2s linear infinite;
+}
+    
+
+/* END OF THE CSS */
+
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  /* @media only screen and (max-width: 768px) {
+    .title-cont h2{
+        font-size: 3rem;
+    }
+    .title-cont p {
+        font-size: 1rem;
+    }
+    .hero-sec {
+        display: flex;
+    }
+  }
+   */
+
+   @media only screen and (max-width: 768px) {
+    .title-cont h2 {
+        font-size: 3rem;
+        /* border-right: none; Remove typewriter cursor effect */
+        white-space: normal; /* Allow content to wrap */
+        /* animation: none; Remove typing and blinking animation */
+    }
+    .title-cont p {
+        font-size: 1rem;
+    }
+    .hero-sec {
+        margin-right: 25px;
+        margin-top: 100px; /* Adjust the top margin for better positioning */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center align text within .title-cont */
+    }
+    .card-cont {
+        margin: 20px auto; /* Center align and provide some spacing */
+        flex-direction: column; /* Stack content vertically */
+    }
+    .card {
+        margin-top: 20px; /* Add spacing between cards */
+    }
+    .mid-sec {
+        margin-top: 100px; /* Adjust the top margin for better positioning */
+    }
+    .pol-cont {
+        margin-top: 20px; /* Add spacing between polaroids */
+        column-gap: 20px; /* Adjust the gap between polaroids */
+        flex-direction: column; 
+        align-items: center; 
+        height: auto; 
+    }
+    .pol-cont > * {
+        margin-bottom: 20px;
+    }
+    .cssBasedZoom {
+        transform: none; /* Remove the zoom effect on hover */
+    }
+    
+    
+}
