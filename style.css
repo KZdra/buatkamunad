@@ -116,7 +116,7 @@ background: linear-gradient(97deg, rgba(97,130,100,1) 0%, rgba(121,172,120,1) 57
 
 
 .about-you {
-    margin-top: 300px;
+    margin-top: 150px;
     height: 100vh;
 }
     
@@ -176,7 +176,7 @@ background: linear-gradient(97deg, rgba(97,130,100,1) 0%, rgba(121,172,120,1) 57
 }
 
 .end-Page {
-    margin-top: 300px;
+    margin-top: 100px;
     height: 100vh;
 
 }
@@ -246,7 +246,7 @@ background: linear-gradient(97deg, rgba(97,130,100,1) 0%, rgba(121,172,120,1) 57
     list-style-type: '📸';
 }
 .footer {
-    margin-top: 100px;
+    margin-top: 50px;
     color: white;
     font-size: 2rem;
     font-family: monday-donuts;
@@ -349,5 +349,13 @@ body::-webkit-scrollbar {
         align-items: center;
         text-align: center;
     }
-    
+    .end-Page {
+        display: none;
+    }
+    .songfornadya-cont {
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
 }
