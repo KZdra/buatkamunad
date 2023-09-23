@@ -113,10 +113,56 @@ background: linear-gradient(97deg, rgba(97,130,100,1) 0%, rgba(121,172,120,1) 57
 .rotation {
     animation: rotation 2s linear infinite;
 }
+
+
+.about-you {
+    margin-top: 300px;
+    height: 100vh;
+}
     
+.abtu-title {
+    text-align: center;
+    color: #D0E7D2;
+    font-size: 3rem;
+}
+
+
+
+.abtu-card-cont {
+    display: flex;
+    height: 450px;
+    flex-direction: row;
+    justify-content: start;
+}
+.abtu-card {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 10px;
+    background-color: white;
+    height: 300px;
+}
+
+.abtu-article {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.abtu-p {
+    margin-top: 10px;
+    margin-left: 3px;
+    font-family: monday-donuts;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: white;
+
+}
 
 /* END OF THE CSS */
 
+@font-face {
+    font-family: monday-donuts;
+    src: url('fonts/MondayDonuts.ttf');
+}
 
 /* The typing effect */
 @keyframes typing {
@@ -197,6 +243,10 @@ body::-webkit-scrollbar {
     .cssBasedZoom {
         transform: none; /* Remove the zoom effect on hover */
     }
-    
+    .abtu-card-cont {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     
 }
