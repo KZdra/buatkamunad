@@ -176,7 +176,7 @@ background: linear-gradient(97deg, rgba(97,130,100,1) 0%, rgba(121,172,120,1) 57
 }
 
 .end-Page {
-    margin-top: 200px;
+    margin-top: 300px;
     height: 100vh;
 
 }
@@ -290,19 +290,6 @@ body::-webkit-scrollbar {
       transform: rotate(359deg);
     }
   }
-
-  /* @media only screen and (max-width: 768px) {
-    .title-cont h2{
-        font-size: 3rem;
-    }
-    .title-cont p {
-        font-size: 1rem;
-    }
-    .hero-sec {
-        display: flex;
-    }
-  }
-   */
 
    @media only screen and (max-width: 768px) {
     .title-cont h2 {
