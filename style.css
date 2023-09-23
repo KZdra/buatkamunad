@@ -156,6 +156,20 @@ background: linear-gradient(97deg, rgba(97,130,100,1) 0%, rgba(121,172,120,1) 57
     color: white;
 
 }
+.songtitle {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+.songfornad-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.songfornad  {
+    scale: .9;
+}
 
 /* END OF THE CSS */
 
